@@ -1,0 +1,4 @@
+1-Animaciones
+2-Api rest 
+3-Agregar banners(con marcas, nike. etc)
+4-videos
