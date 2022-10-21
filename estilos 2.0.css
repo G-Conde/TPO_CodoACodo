@@ -229,28 +229,7 @@ header a:hover{
     font-family: 'Montserrat';
 }
 
-#caracteristicas li{
-    margin:15px 0px;
-    font-weight: bold;
-    
-}
 
-#consulta-ya{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(30,30,30);
-    color: white;
-    height: 80vh;
-}
-#consulta-ya h2{
-    font-size: 9vw;
-}
-#consulta-ya button{
-    font-size: 5vw;
-}
 
 footer{
     background-color: rgb(230,230,230);
@@ -354,50 +333,9 @@ footer .container{
         box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
         width: 30%;
         height: 100%;
-    }
-    
-    
-   #caracteristicas .container{
-    text-align: initial;
-    font-size: 2em;
-   }
-
-   #caracteristicas h3{
-    text-align: center;
-
-   }
-   #caracteristicas ul{
-    margin-left: 200px;
-   }
-
-   #consulta-ya h2{
-    font-size: 5em;
-   }
-
-   #consulta-ya button{
-    font-size: 2em;
-
-    
+    } 
 }
 
-}
-
-.subtitulo{
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 30px;
-    font-size: 30px;
-
-}
-
-.container{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
 
 .caja img{
     width: 300px;
