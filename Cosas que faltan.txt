@@ -2,3 +2,50 @@
 2-Api rest 
 3-Agregar banners(con marcas, nike. etc)
 4-videos
+
+
+
+
+	function getPlayers(done){
+
+		const results= fetch("https://free-nba.p.rapidapi.com/players?page=0&per_page=25");
+        
+		
+		results
+		.then(response => response.json() )
+		.then(data=>{
+			done(data)
+		});
+	}
+
+	getPlayers(data => {
+		console.log(data);
+	});
+
+ <article>
+            <div class="containerJugadores" id="containerJugadores">
+                <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/201942.png" alt="jugador">
+            </div>
+
+            <h2>Personaje</h2>
+            <span>Caracteristicas del jugador</span>
+
+        </article>
+        <article>
+            <div class="containerJugadores" id="containerJugadores">
+                <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/201942.png" alt="jugador">
+            </div>
+
+            <h2>Personaje</h2>
+            <span>Caracteristicas del jugador</span>
+
+        </article>
+        <article>
+            <div class="containerJugadores" id="containerJugadores">
+                <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/201942.png" alt="jugador">
+            </div>
+
+            <h2>Personaje</h2>
+            <span>Caracteristicas del jugador</span>
+
+        </article>

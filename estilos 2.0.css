@@ -426,3 +426,36 @@ footer .container{
  }   
  }
  
+
+ /* API JUGADORES*/
+
+ .headJugadores{
+    text-align: center;
+    background-color: rgb(187, 70, 49);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+
+ }
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+ }
+
+ .containerJugadores{
+    display: flex;
+}
+
+.containerJugadores img {
+    width: 100%;
+}
+
+article {
+    padding: 10px;
+    box-shadow: 0px 1px 1px #000;
+}
+ 
