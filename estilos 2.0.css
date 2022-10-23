@@ -429,7 +429,7 @@ footer .container{
 
  /* API JUGADORES*/
 
- .headJugadores{
+ #headTeams{
     text-align: center;
     background-color: rgb(187, 70, 49);
     padding: 20px;
@@ -440,19 +440,29 @@ footer .container{
 
  }
 
-main{
+ #items{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 18px;
- }
+    gap: 30px;
+    margin: 10% 20% 0%;
+    align-items: center;
+}
 
- .containerJugadores{
+article {
+    padding-top: 100%;
+    box-shadow: 0px 1px 1px #000;
+}
+
+.containerJugadores{
+    padding: 10px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.containerJugadores img {
+/*.containerJugadores img {
     width: 100%;
-}
+}*/
 
 article {
     padding: 10px;
