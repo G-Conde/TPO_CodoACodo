@@ -1,6 +1,8 @@
-const $openclose = document.getElementById ("open-close")
-      $openclose.addEventListener ("click", () => {
+const iconomenu = document.querySelector('#icono-menu'),
+      menu = document.querySelector('#menu');
 
-$aside.classlist.toggle("desplegar")
-
+      iconomenu.addEventListener('click', (e)=>{
+            menu.classList.toggle('active')
+            document.body.classList.toggle('opacidad')
+            
       })

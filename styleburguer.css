@@ -1,80 +1,53 @@
-:root{
-       --fondo-color: hsla(206, 70%, 45%, 0.533);
-       --items-color: #20202061;
-       --border-color: #38383858;
-       --text-color: #300e0ef4;
-}
-
 *{
-padding: 0;
-box-sizing: border-box;
-margin:0;
+
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
 }
 
-body{
-width: 100%;
-height: 100vh;
-position: relative;
-
-}
-html{
-
-font-size: 62.5%;
-font-family:serif 
-
-}
-nav img{
-
-width: 3em;
-height: 3em;
-display: flex;
-margin-left: 20px;
-margin-bottom: 10px;
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: var(--items-color);
+/* Icono del menu */
+.icono-menu{
+    margin: 40px 50px;
     position: relative;
-    padding: 10px 20px;
-    border-bottom: 1px solid var(--border-color);
+    z-index: 10;
 }
-nav span i{
-    color: #fff;
-    font-size: 2.7rem;
-    cursor: pointer;     
+.icono-menu img{
+    vertical-align: top;
+    width: 40px;
+    cursor: pointer
 }
-aside{
-
-    width: 60px;
+/* Contenedor del menu*/
+.contenido-menu{
+    background-color: rgba(239, 225, 242, 0.966);
+    box-shadow: 2px 0px 5px 2px rgba(1, 26, 89, 0.884);
+    width: 400px;
+    height: 100vh;
     position: absolute;
-    transition: 0.5s;
-}
-aside::hover{
-    overflow-y: auto;
-}
-.desplegar{
-    transform: translate(-100%);
-}
-.contenedor{
-    border-bottom: 1px solid var(--border-color);
-    padding: 10px 1px;
-    color: var(--text-color)
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
     }
-.contenedor div{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-.contenedor div::hover{
-    background-color: #404eb4;
-}
-.contenedor div span{
-    margin-left: 15px;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
+    /* Listado del menu*/
+    .contenido-menu ul{
+        padding: 100px 0px 20px 0px;
+        list-style: none;         
+    }
+    .contenido-menu ul li{
+        color: rgba(62, 5, 5, 0.574);
+        display: block;
+        font-size: 25px;
+        padding: 10px 50px;
+        cursor: pointer;
+    }
+    .contenido-menu ul li:hover{
+        background-color: blue;
+        color: rgb(233, 212, 252);
+    }
+    /* Necesario para la transicion con Javascript */
+    .active{
+        transform: translate(-600px);
+        }
+    .opacidad{
+        background-color: rgb(238, 238, 249);
+        transition: all .5s ease;
+    }
