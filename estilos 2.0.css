@@ -101,9 +101,7 @@ header a:hover{
 
 #intro .container{
     text-align: center;
-    padding: 100px 12px;
-   
-
+    padding: 200px 12px;
 }
 
 #actualidad{
@@ -292,6 +290,11 @@ header a:hover{
     }
 
     /*bloque de intro a el local*/
+
+    #intro .container{
+        display: flex;
+        justify-content: center;
+    }
     
     #intro h2{
         margin-top: 0;
