@@ -99,6 +99,19 @@ header a:hover{
     font-size: 1.75em;
 }
 
+
+.banners {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 1px;
+
+}
+
+
+
+
+
 #intro .container{
     text-align: center;
     padding: 100px 12px;
@@ -257,14 +270,10 @@ header a:hover{
 
     /*BANNER*/
 
-    .banners{
-        margin-top: 10%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        background-color: rgb(3, 3, 3);
+    .banners {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 3px;
     }
     
     .marca{
