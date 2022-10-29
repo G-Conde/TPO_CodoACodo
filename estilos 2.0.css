@@ -88,7 +88,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
         )
-    ,url("img/tienda.jpeg");
+    ,url("img/home/tienda.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -155,7 +155,7 @@ header a:hover{
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-        ), url("img/ginobili-hall-of-fame.jpg") ;
+        ), url("img/actualidad/ginobili-hall-of-fame.jpg") ;
         
 }
 .notas:nth-child(2){
@@ -163,7 +163,7 @@ header a:hover{
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-    ), url("img/campazzo3.jpg");
+    ), url("img/actualidad/campazzo3.jpg");
    
 }
 .notas:last-child{
@@ -171,7 +171,7 @@ header a:hover{
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-    ), url("img/harden.jpg");
+    ), url("img/actualidad/harden.jpg");
 
 }
 
@@ -367,12 +367,16 @@ header a:hover{
 
 /*TIENDA ONLINE*/
 
-.container-Tienda h1{
-    padding: 2%;
-    text-align: center;
+.container-Tienda{
+    display: grid;
+    justify-content: center;
+    align-items: center;
     background-color: #000;
-    color: blueviolet
-    ;
+    height: 100px;
+    
+}
+.container-Tienda img{
+    height: 90px;
 }
 
 .containerTienda{
