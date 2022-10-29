@@ -5,7 +5,7 @@ document.getElementById("header").innerHTML=`
                 <nav>
                     <a href="index.html"><p>Home</p></a>
                     <a href="#actualidad"><p>Actualidad</p></a>
-                    <a href="articulos.html"><p>Tienda Online</p></a>
+                    <a href="Articulos.html"><p>Tienda Online</p></a>
                     <a href="contacto.html"><p>Contacto</p></a>
                     <a href="login.html"><p>Login</p></a>
               </nav>
