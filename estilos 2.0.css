@@ -42,7 +42,7 @@ button:hover{
 header{
     background-color: rgb(245,245,245) ;
 }
-/*
+
 header .logo{
     margin:0;
     padding: 25px 30px;
@@ -75,7 +75,7 @@ header a{
 header a:hover{
     color:blueviolet;
 }
-*/
+
 #hero{
     display: flex;
     align-items: center;
@@ -367,24 +367,33 @@ header a:hover{
 
 /*TIENDA ONLINE*/
 
+.container-Tienda h1{
+    padding: 2%;
+    text-align: center;
+    background-color: #000;
+    color: blueviolet
+    ;
+}
+
 .containerTienda{
-    margin-bottom: 5%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    /*justify-content: center;*/
-    align-items:center;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 1px;
+   
+
 }
 
 .caja {
-    width: auto;
-    height: auto;
-    border: 3px solid #000;
+    display: grid;
+    justify-content: center;
+    
+   
 }
 
 .caja img{
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 230px;
 }
 
 .caja p{
@@ -392,12 +401,26 @@ header a:hover{
     font-size: 20px;
     font-weight: bold;
 }
-
+/*MEDIAS QUERY TIENDA*/
 @media screen and (max-width: 768px){
     .containerTienda{
-        grid-template-columns:1fr 1fr;
-        padding: 35px 0px;
-       }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1px;
+   
+
+}
+ }
+ @media screen and (max-width: 568px){
+    .containerTienda{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 1px;
+   
+
+}
  }
 
 
