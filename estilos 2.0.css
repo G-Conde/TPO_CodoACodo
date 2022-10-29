@@ -42,7 +42,7 @@ button:hover{
 header{
     background-color: rgb(245,245,245) ;
 }
-
+/*
 header .logo{
     margin:0;
     padding: 25px 30px;
@@ -75,7 +75,7 @@ header a{
 header a:hover{
     color:blueviolet;
 }
-
+*/
 #hero{
     display: flex;
     align-items: center;
@@ -108,15 +108,14 @@ header a:hover{
 
 }
 
-.marca img{
+.marca{
+    display: flex;
+    justify-content: center;
+    align-items:center;
     width: 80%;
     height:auto;
 
 }
-
-
-
-
 
 #intro .container{
     text-align: center;
@@ -283,6 +282,7 @@ header a:hover{
     }
     
     .marca{
+        display: flex;
         align-items: center;
         justify-content: center;     
         cursor: pointer;
@@ -489,13 +489,19 @@ header a:hover{
      align-items:center;
  }
 
-.pie-pagina .grupo-1 .box h2 {
+.pie-pagina .grupo-1 .box h2{
     color: rgb(255, 255, 255);
     margin-bottom: 25px;
     font-size: 20px;
     text-align: center;
  
- }  
+ }
+ 
+.pie-pagina .grupo-1 .box p {
+    color: rgb(255, 255, 255);
+    font-size: 4px;
+}
+
 .iframe {
     display: flex;
     justify-content: center;
@@ -505,7 +511,7 @@ header a:hover{
     flex-direction: row;
     justify-content: center;
 }
- } 
+} 
  
 
  /* API JUGADORES*/
