@@ -1,16 +1,23 @@
-document.getElementById("header").innerHTML=`
+document.getElementById("id_header").innerHTML=`
 <header>
-<div class="container">
-            <p class="logo">NBA Store | AR</p>
-                <nav>
-                    <a href="index.html"><p>Home</p></a>
-                    <a href="#actualidad"><p>Actualidad</p></a>
-                    <a href="Articulos.html"><p>Tienda Online</p></a>
-                    <a href="contacto.html"><p>Contacto</p></a>
-                    <a href="login.html"><p>Login</p></a>
-              </nav>
-        </div>`
-        
+
+<input type="checkbox" id="btn-menu">
+<label for="btn-menu"><i class="fa-sharp fa-solid fa-bars"></i></label>
+    
+    <nav class="menu">
+        <a href="index.html"> <div class="logo"> NBA Store | AR </div></a>
+                    <ul class="menu-item">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#intro">Nosotros</a></li>
+                        <li><a href="index.html#actualidad">Actualidad</a></li>
+                        <li><a href="articulos.html">Tienda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+    </nav>
+
+</header>`
+
 document.getElementById("footer").innerHTML=`
 <footer class="pie-pagina">
 <div class="grupo-1">

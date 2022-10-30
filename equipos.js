@@ -18,12 +18,11 @@ async function get_items(){
 	response.data.forEach( item => {
         let div_item = `
         
-        
 		<article>
                 <div class="containerJugadores"> 
-				    <div> 🏀Abreviatura: ${item.abbreviation}</div>
-                    <div> 🏀 Nombre: ${item.full_name}</div>
-					<div> 🏀 Ciudad: ${item.city}</div>					
+				    <div class="nombreEquipo"> Nombre: ${item.full_name} </div>
+                    <div> Abreviatura: ${item.abbreviation}</div>
+					<div> Ciudad: ${item.city}</div>					
 			    </div>           
          </article>   
 	    `;

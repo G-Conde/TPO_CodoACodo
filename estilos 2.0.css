@@ -11,7 +11,7 @@ body{
 h1{font-size: 3,5 em;} /*em=Tamaño relativo de la fuente*/
 h2{font-size: 2,7em;}
 h3{font-size: 2em;}
-p{font-size: 1.25em}
+p{font-size: 1.00em}
 ul{list-style: none;}/*sacamos los puntos de la lista*/
 li{ font-size: 1.25em;}
 
@@ -39,42 +39,13 @@ button:hover{
 .color-acento{
     color: blueviolet;}
 
-header{
-    background-color: rgb(245,245,245) ;
-}
 
-header .logo{
-    margin:0;
-    padding: 25px 30px;
-    font-weight: bold;
-    color: blueviolet;
-    font-size: 1.6em;
 
-}
 
-header .container{
-    display:flex ;
-    flex-direction: column;
-    align-items: center;
 
-}
-header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
-}
- 
-header a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
 
-}
-header a:hover{
-    color:blueviolet;
-}
+
+/*---------------------------HERO---------------------*/
 
 #hero{
     display: flex;
@@ -100,6 +71,13 @@ header a:hover{
 }
 
 
+
+
+
+
+/*--------------------------BANNER--------------------------*/
+
+
 .banners {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -122,6 +100,11 @@ header a:hover{
     padding: 100px 12px;
 }
 
+
+
+
+/*------------------------ACTUALIDAD------------------------*/
+
 #actualidad{
     background-color: rgb(30,30,30);
     color: white;
@@ -134,6 +117,7 @@ header a:hover{
 }
 #actualidad p{
     display:none;
+    min-height: 180px;
     
 }
 #actualidad h2{
@@ -147,7 +131,6 @@ header a:hover{
     margin: 12px;
     padding: 50px;
     border-radius: 15px;
-
 }
 
 .notas:first-child{
@@ -174,6 +157,76 @@ header a:hover{
     ), url("img/actualidad/harden.jpg");
 
 }
+
+
+
+
+/*--------------------API EQUIPOS------------------------*/
+
+#equipos{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;    
+}
+
+#equipos .container{
+    padding: 15px 0px;
+}
+
+#equipos h2{
+    padding-top: 0px;
+    margin-top: 0px;
+    font-size: 3em;
+}
+
+#equipos p{
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 1.3em;
+    color:rgb(0, 0, 0);
+}
+
+#items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 8% 10% 0%;
+    align-items: center;
+    font-weight: bold;
+}
+
+.nombreEquipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    text-transform: uppercase;
+    font-weight: bold;
+    /*padding: 10px;*/
+    min-height: 50px;
+}
+
+article {
+    padding:0px;
+    box-shadow: 0px 1px 1px rgb(255, 255, 255);
+}
+
+.containerJugadores{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    min-height: 105px;
+}
+
+
+
+
+
+
+/*-----------------------CONTACTO-------------------------*/
 
 #contacto{
     color: rgb(0, 0, 0);
@@ -257,25 +310,17 @@ header a:hover{
 	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
 }
 
-/*MEDIDAS PARA PC DE ESCRITORIO*/
 
-@media (min-width: 720px){
 
-    header{
-        position: static;/*siempre que usamos, le damos el ancho otra vez*/
-        width: 100%;
-    }
 
-    header .container{
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-    }
+
+/*--------------------MEDIDAS PARA PC DE ESCRITORIO----------------*/
+
+
+@media (min-width: 768px){
+
+    /*HERO*/
 
     #hero h1{
         font-size: 5em;
@@ -333,17 +378,20 @@ header a:hover{
     }
 
     #intro .img-container{
-         background-image:linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        ) ,url("img/home/lebron.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        height: 400px;
-        width:50%;
-    }
+        background-image:linear-gradient(
+           0deg,
+           rgba(0,0,0,0.5),
+           rgba(0,0,0,0.5)
+       ) ,url("img/home/lebron.jpg");
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center center;
+       height: 400px;
+       width:50%;
+   }
+   
+
+    /*ACTUALIDAD*/
     
     #actualidad .actualidad-notas{
         display: flex;
@@ -374,7 +422,16 @@ header a:hover{
     } 
 }
 
-/*TIENDA ONLINE*/
+
+
+
+
+
+
+
+
+/*------------------TIENDA ONLINE-----------------*/
+
 
 .container-Marca{
     display: grid;
@@ -393,17 +450,12 @@ header a:hover{
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     gap: 30px;
-   
-
 }
 
 .caja {
     display: grid;
     justify-content: center;
     margin: 10px 0px;
-
-    
-   
 }
 
 .caja img{
@@ -416,7 +468,7 @@ header a:hover{
     font-size: 20px;
     font-weight: bold;
 }
-/*MEDIAS QUERY TIENDA*/
+
 @media screen and (max-width: 768px){
     .containerTienda{
     display: grid;
@@ -439,8 +491,7 @@ header a:hover{
  }
 
 
-
-/*FOOTER*/
+/*-------------------FOOTER-----------------------*/
 
 .pie-pagina{
     width: 100%;
@@ -481,7 +532,6 @@ header a:hover{
  .iframe{
     display: flex;
     justify-content: center;
-
  }
  
 
@@ -518,7 +568,8 @@ header a:hover{
  .pie-pagina .grupo-2 small{
      font-size: 15px;
  }
- @media screen and (max-width: 800px){
+ 
+ @media screen and (max-width: 768px){
  .pie-pagina .grupo-1{
      width: auto;
      grid-template-columns:repeat(1, 1fr);
@@ -532,8 +583,7 @@ header a:hover{
     margin-bottom: 25px;
     font-size: 20px;
     text-align: center;
- 
- }
+}
  
 .pie-pagina .grupo-1 .box p {
     color: rgb(255, 255, 255);
@@ -552,50 +602,9 @@ header a:hover{
 } 
  
 
- /* API JUGADORES*/
-
- #headTeams{
-    text-align: center;
-    background-color: rgb(187, 70, 49);
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    color: white;
-}
-
- #items{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    margin: 10% 20% 0%;
-    align-items: center;
-    
-}
-
-article {
-    padding-top: 100%;
-    box-shadow: 0px 1px 1px #000;
-}
-
-.containerJugadores{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/*.containerJugadores img {
-    width: 100%;
-}*/
-
-article {
-    padding: 10px;
-    box-shadow: 0px 1px 1px #000;
-}
 
 
-/*LOGIN*/
+/*------------------LOGIN---------------------*/
 
 .bodyLogin {
 	font-family: 'montserrat', sans-serif;
@@ -780,9 +789,174 @@ article {
 	}
 }
 
-.novedadesBox .img{
+
+
+
+
+
+/*----------------- MENU DE NAVEGACION----------------*/
+
+
+
+header{                                                /*PC ESCRITORIO*/   
+    position: static;
+    width: 100%;
+    background-color: rgb(245,245,245);
+}
+
+header .container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+#btn-menu {                                                                  
+    display: none;
+}
+
+header label {
+    display: none;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+label:hover {
+    cursor: pointer;
+    background: rgba(51, 51, 51, 0.8);
+}
+
+.menu .logo {
+    padding: 15px;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+
+nav {
+    font-size: 0.9rem;
+    overflow: auto;
+    padding: 15px 0px 25px;
     height: auto;
-    width: auto;
-    display: grid;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+}
+
+.menu i {
+    font-size: smaller;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    font-weight: 300;
+}
+
+.menu li a {
+    display: block;
+    padding: 1rem 0.9rem;
+}
+
+.menu li a:hover {
+    font-weight: 600;
+    transform: scale(1.2);
+    color:blueviolet;
+}
+
+
+
+@media screen and (max-width:992px) {                     /*TABLET*/
+    
+    .menu .logo {
+        padding: 5px;
+        font-size: 1.2rem;
+    }
+    
+    .menu ul {
+        font-weight: 300;
+        font-size: 0.9rem;
+        padding: 0.1rem;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {                      /*CELULAR*/
+        
+    header label {
+        display: block;
+        position: relative;
+        font-size: 27px;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        border-right: 1px solid #fff;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;        
+    }
+    
+    label:hover {
+        cursor: pointer;
+        background: rgba(51, 51, 51, 0.9);
+    }
+
+    .menu .logo {
+        display: none;           
+        /*margin-top: 550px;
+        color: white;
+        font-size: 1.5rem;*/
+    }
+
+    .menu {
+        position: absolute;
+        background-color: rgba(11, 11, 11, 0.9);
+        width: 100%;
+        height: 100%;
+        margin-left: -100%;
+        transition: all 1s;
+        justify-content: center;
+        text-align: center;
+        align-items: flex-start;
+        text-transform: uppercase;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    .menu li {
+        border-bottom: 1px solid white;
+        width: 60vh;
+        padding: 10px;
+    }
+
+    .menu a {
+        color: white;
+    }
+
+    .menu li a:hover {
+        font-weight: 600;
+        padding: 1rem;
+        margin: 0 6rem;
+    }
+
+    #btn-menu:checked~.menu {
+        margin: 0;
+        z-index: 100;
+    }
 }
