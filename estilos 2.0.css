@@ -176,21 +176,29 @@ header a:hover{
 }
 
 #contacto{
-    background-color: rgb(243, 234, 234);
     color: rgb(0, 0, 0);
     text-align: center;
     padding-bottom: 20px;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1253,c_limit/d55e7bb4-38ba-40dc-abb1-5b527e3c8528/marca-jordan.png);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #contacto .titulo{
     padding: 20px;
     font-size:1.5em;
     font-weight: bold;
+    color: rgb(255, 255, 255);
 }
 
 #contacto .parrafo {
     padding-bottom: 20px;
     font-size:0.8em;
+    color: rgb(255, 255, 255);
 }
 
 #formulario{
@@ -205,7 +213,7 @@ header a:hover{
     padding:15px;
     margin: 0 auto;
     
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.938);
     border-radius: 10px;
     border: solid 1px;
     box-shadow: 1px -1px 17px 0px rgba(0, 0, 0, 0.75);
@@ -329,7 +337,7 @@ header a:hover{
             0deg,
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
-        ) ,url("img/lebron.jpg");
+        ) ,url("img/home/lebron.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -340,7 +348,8 @@ header a:hover{
     #actualidad .actualidad-notas{
         display: flex;
         justify-content: center;
-        align-items:center;
+        align-items: flex-start;
+        
     }
    
     #actualidad p{
@@ -349,7 +358,7 @@ header a:hover{
 
     }
     #actualidad h3{
-        margin: 30px 10px;
+        margin: 65px 10px 10px;
         font-size: 30px;
     }
 
@@ -367,7 +376,7 @@ header a:hover{
 
 /*TIENDA ONLINE*/
 
-.container-Tienda{
+.container-Marca{
     display: grid;
     justify-content: center;
     align-items: center;
@@ -375,7 +384,7 @@ header a:hover{
     height: 100px;
     
 }
-.container-Tienda img{
+.container-Marca img{
     height: 90px;
 }
 
@@ -590,8 +599,13 @@ article {
 	font-family: 'montserrat', sans-serif;
 	margin: 0 auto;
 	height: 100vh;
-	background: url(img/tienda.jpeg);
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(img/home/tienda.jpeg);
 	background-size: 100%;
+    background-attachment: fixed;
 }
 
 .mainLogin {
@@ -764,20 +778,9 @@ article {
 	}
 }
 
-#novedades{
-    height: 250px;
-    width: 100%;
-    background-color: white;
-}
-.imagenesNovedades{
+.novedadesBox .img{
+    height: auto;
+    width: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
-    justify-content: center;
-
-}
-
-.cajaImagen{
-    width:200%;
-    height:100%;
+    align-items: center;
 }
