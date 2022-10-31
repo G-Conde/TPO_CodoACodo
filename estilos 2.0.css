@@ -23,11 +23,11 @@ button{
     border: 2px solid rgba(0,0,0,0.5);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     color: white;
-    background-color: blueviolet;
+    background-color: rgb(76, 43, 226);
 }
 
 button:hover{
-    background-color: rgb(101,33,165);
+    background-color: rgb(46, 33, 165);
 }
 
 .container{
@@ -37,7 +37,7 @@ button:hover{
 }
 
 .color-acento{
-    color: blueviolet;}
+    color:rgb(76, 43, 226);}
 
 
 
@@ -122,6 +122,7 @@ button:hover{
 }
 #actualidad h2{
     margin-top: 0;
+    margin-bottom: 10px;
     font-size: 3em;
 }
 
@@ -164,8 +165,8 @@ button:hover{
 /*--------------------API EQUIPOS------------------------*/
 
 #equipos{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: rgb(247, 241, 241);
+    color: whitesmoke;
     text-align: center;
     width: 100%;    
 }
@@ -178,13 +179,14 @@ button:hover{
     padding-top: 0px;
     margin-top: 0px;
     font-size: 3em;
+    color: rgb(5, 5, 5);
 }
 
 #equipos p{
     padding-top: 10px;
     margin-top: 10px;
     font-size: 1.3em;
-    color:rgb(0, 0, 0);
+    color: rgb(7, 7, 7);
 }
 
 #items{
@@ -200,7 +202,7 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-color: rgb(8, 8, 8);
     text-transform: uppercase;
     min-height: 50px;
     font-weight: bold;
@@ -208,11 +210,11 @@ button:hover{
 
 article {
     padding:0px;
-    box-shadow: 0px 1px 1px rgb(199, 199, 199);
+    box-shadow: 0px 1px 1px rgb(10, 10, 10);
 }
 
 .containerJugadores{
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(27, 27, 27);
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -437,9 +439,7 @@ article {
 
 
 /*------------------TIENDA ONLINE-----------------*/
-.containerban .img{
-    width: 100%;
-}
+
 
 .container-Marca{
     display: grid;
@@ -585,7 +585,7 @@ article {
      height: 40px;
      line-height: 45px;
      color: rgb(255, 255, 255);
-     background-color: blueviolet;
+     background-color: rgb(76, 43, 226);
      margin-right: 10px;
      text-align: center;
      transition: all 300ms ease;
@@ -594,7 +594,7 @@ article {
      color:rgba(0,0,0,0.5);
  }
  .pie-pagina .grupo-2{
-     background-color: blueviolet;
+     background-color: rgb(46, 33, 165);
      padding: 15px 10px ;
      text-align: center;
      color: rgb(255,255,255);
@@ -621,7 +621,7 @@ article {
  
 .pie-pagina .grupo-1 .box p {
     color: rgb(255, 255, 255);
-    font-size: 4px;
+    font-size: 1em;
 }
 
 .iframe {
@@ -633,6 +633,8 @@ article {
     flex-direction: row;
     justify-content: center;
 }
+
+
 } 
  
 
@@ -733,7 +735,7 @@ article {
 .formulario__mensaje {
 	height: 45px;
 	line-height: 45px;
-	background: rgb(131, 68, 131);
+	background: rgb(46, 33, 165);
 	padding: 0 15px;
 	border-radius: 3px;
 	display: none;
@@ -879,7 +881,7 @@ label:hover {
     padding: 15px;
     font-size: 1.6em;
     font-weight: bold;
-    color: blueviolet;
+    color:rgb(46, 33, 165);
 }
 
 
@@ -914,7 +916,7 @@ nav {
 .menu li a:hover {
     font-weight: 600;
     transform: scale(1.2);
-    color:blueviolet;
+    color:rgb(76, 43, 226);
 }
 
 
@@ -999,4 +1001,95 @@ nav {
         margin: 0;
         z-index: 100;
     }
+}
+
+
+
+/* ---------BANNER NOVEDADES---------*/
+
+.containerNovedades {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 3%;
+}
+
+.containerNovedades ul {
+    display: flex;
+    padding: 0;
+
+    width: 400%;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: linear;
+
+}
+
+.containerNovedades li {
+    height: 400px;
+    width: 100%;
+    list-style: none;
+}
+
+.containerNovedades img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0%   {margin-left: 0;}
+    20%  {margin-left: 0;}
+    25%  {margin-left: -100%;}
+    45%  {margin-left: -100%;}
+    50%  {margin-left: -200%;}
+    70%  {margin-left: -200%;}
+    75%  {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+@media screen and (max-width:992px) {
+    .containerNovedades li {
+        height: 200px;
+        width: 100%;
+        list-style: none;
+    }
+
+}
+
+
+
+@media screen and (max-width:768px) { 
+    .containerNovedades li {
+        height: 150px;
+        width: 100%;
+        list-style: none;
+    }
+
+
+}
+
+#historiaNBA{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),  url(https://images.unsplash.com/photo-1584770557404-a5d2a798e81a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1447&q=80);
+    background-position: center;
+    color: whitesmoke;
+    text-shadow: 20px 15px 7px black ;
+    
+    
+}
+
+.tituloVideo{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: center;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.video {
+    display:flex;
+    padding: 40px;
+    justify-content: center;
 }

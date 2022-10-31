@@ -8,8 +8,9 @@ document.getElementById("id_header").innerHTML=`
         <a href="index.html"> <div class="logo"> NBA Store | AR </div></a>
                     <ul class="menu-item">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#intro">Nosotros</a></li>
+                       
                         <li><a href="index.html#actualidad">Actualidad</a></li>
+                        <li><a href="index.html#historiaNBA">Historia</a></li>
                         <li><a href="Articulos.html">Tienda</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                         <li><a href="login.html">Login</a></li>
